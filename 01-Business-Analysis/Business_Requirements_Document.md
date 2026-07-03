@@ -143,13 +143,64 @@ The following stakeholders are involved in the Vendor Contract Compliance & Rene
 
 # 6. Business Objectives
 
-> *To be completed.*
+The primary objective of this project is to improve the efficiency, governance, and visibility of vendor contract management by replacing manual processes with a centralized ServiceNow application.
+
+The project aims to achieve the following business objectives:
+
+1. Establish a centralized repository for all vendor contracts and compliance documents.
+
+2. Reduce dependency on spreadsheets, emails, and shared folders for contract management.
+
+3. Improve visibility into the complete vendor contract lifecycle.
+
+4. Ensure timely contract renewals through automated monitoring and notifications.
+
+5. Improve compliance by tracking mandatory vendor certifications and supporting documents.
+
+6. Standardize contract review and approval processes across departments.
+
+7. Reduce operational, legal, and compliance risks associated with expired contracts and missing documentation.
+
+8. Improve audit readiness by maintaining complete contract history and approval records.
+
+9. Provide management with real-time dashboards and reports for informed decision-making.
+
+10. Increase overall operational efficiency by automating repetitive contract management activities.
 
 ---
 
 # 7. Project Scope
 
-> *To be completed.*
+## In Scope
+
+The first release (Version 1.0) of the application will include the following capabilities:
+
+- Vendor contract creation and management.
+- Centralized repository for vendor contracts and supporting documents.
+- Vendor compliance document management.
+- Contract review and approval workflow.
+- Contract renewal request management.
+- Automated renewal reminders and notifications.
+- Contract status tracking throughout the lifecycle.
+- Contract expiration monitoring.
+- Role-based access for different business stakeholders.
+- Audit history and activity tracking.
+- Dashboards and reports for contract and compliance monitoring.
+
+## Out of Scope
+
+The following features are not included in Version 1.0:
+
+- Vendor onboarding and registration.
+- Vendor performance evaluation.
+- Procurement or purchase order management.
+- Invoice and payment processing.
+- Integration with ERP systems (e.g., SAP).
+- Digital signature integration.
+- Vendor Portal or self-service access.
+- Mobile application.
+- AI-based contract risk analysis.
+- Multi-language support.
 
 ---
 
