@@ -80,13 +80,64 @@ The organization requires a centralized ServiceNow application that automates ve
 
 # 4. Current (AS-IS) Process
 
-> *To be completed.*
+The organization currently manages vendor contracts using a combination of spreadsheets, email communication, and shared network folders. There is no centralized application to manage contract lifecycle activities.
+
+The current business process is as follows:
+
+1. The Procurement Team identifies the need for a new vendor contract.
+
+2. The vendor submits the required documents (contract draft, compliance certificates, insurance documents, tax documents, etc.) through email.
+
+3. Procurement manually stores the documents in shared network folders.
+
+4. Contract details such as vendor name, contract value, start date, end date, and renewal date are entered into an Excel spreadsheet.
+
+5. The contract is emailed to the Legal Team for review.
+
+6. After legal approval, the contract is forwarded to business management for final approval.
+
+7. Once approved, the signed contract is stored in shared folders.
+
+8. Renewal dates are manually tracked using Excel and calendar reminders.
+
+9. Compliance documents are reviewed manually at periodic intervals.
+
+10. Procurement teams manually send reminder emails before contract expiration.
+
+11. If renewal activities are delayed, the contract may expire before action is taken.
+
+12. During internal or external audits, teams manually collect contract documents and compliance evidence from multiple locations.
+
+### Pain Points Identified
+
+The current process presents several operational challenges:
+
+- Contract information is stored across multiple systems.
+- Renewal tracking depends on manual effort.
+- Compliance certificates may expire without notification.
+- Approval status lacks visibility.
+- Document retrieval is time-consuming.
+- There is no centralized audit trail.
+- Management lacks real-time reporting.
+- Increased operational, legal, and compliance risks.
 
 ---
 
 # 5. Stakeholder Analysis
 
-> *To be completed.*
+The following stakeholders are involved in the Vendor Contract Compliance & Renewal Management process.
+
+| Stakeholder | Role | Responsibilities |
+|-------------|------|------------------|
+| Procurement Team | Primary User | Creates vendor contracts, maintains contract records, initiates renewals, and coordinates with vendors. |
+| Vendor | External Stakeholder | Provides contracts, compliance documents, certificates, and responds to renewal requests. |
+| Legal Team | Reviewer | Reviews contract terms, legal clauses, and approves contractual agreements. |
+| Compliance Team | Reviewer | Verifies vendor compliance documents, regulatory requirements, and certification validity. |
+| Finance Team | Reviewer | Reviews commercial terms, payment conditions, and financial obligations before approval. |
+| Procurement Manager | Approver | Provides final approval for vendor contracts and renewal decisions. |
+| Senior Management | Business Stakeholder | Reviews contract status, business risks, and overall procurement performance through dashboards and reports. |
+| Internal Audit Team | Auditor | Reviews contract history, approvals, compliance evidence, and audit logs. |
+| ServiceNow Administrator | System Administrator | Maintains application configuration, users, security, and system administration. |
 
 ---
 
