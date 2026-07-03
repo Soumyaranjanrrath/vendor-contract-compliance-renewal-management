@@ -35,7 +35,7 @@ The system shall allow authorized Procurement users to create a new vendor contr
 The system shall generate a unique Contract ID for every newly created contract.
 
 ### FR-003
-The system shall capture contract details including vendor, contract title, contract type, contract value, start date, end date, renewal date, contract owner, and status.
+The system shall capture contract details including vendor, contract title, contract type, contract value, start date, end date, renewal date, contract owner, business unit, and contract status.
 
 ### FR-004
 The system shall allow users to upload one or more supporting documents for each contract.
@@ -53,10 +53,10 @@ The system shall maintain predefined contract statuses including Draft, Under Re
 The system shall assign a contract owner responsible for managing each contract throughout its lifecycle.
 
 ### FR-009
-The system shall allow users to search contracts using Contract ID, Vendor Name, Contract Title, or Contract Status.
+The system shall provide quick search capability within the Contract Management module. Detailed enterprise search capabilities are defined in Module 9 (Search & Filtering).
 
 ### FR-010
-The system shall allow users to filter contracts using contract status, vendor, contract type, owner, and expiration date.
+The system shall provide basic filtering capabilities within the Contract Management module. Advanced search and filtering capabilities are defined in Module 9 (Search & Filtering).
 
 ### FR-011
 The system shall maintain a complete history of contract modifications for audit purposes.
@@ -72,7 +72,7 @@ The system shall allow authorized users to archive completed, expired, or termin
 The system shall allow authorized users to create and maintain compliance records associated with a vendor contract.
 
 ### FR-014
-The system shall allow users to upload multiple compliance documents, such as insurance certificates, ISO certifications, GST registration, and other regulatory documents.
+The system shall allow users to upload multiple compliance documents, such as insurance certificates, ISO certifications, GST registration, and other organization-defined regulatory documents.
 
 ### FR-015
 The system shall categorize compliance documents based on predefined compliance types.
@@ -146,7 +146,7 @@ The system shall allow authorized Procurement users to initiate a renewal reques
 The system shall create a Renewal Record linked to the selected parent contract whenever a renewal process is initiated.
 
 ### FR-036
-The system shall capture renewal information including proposed contract duration, revised contract value, renewal justification, and supporting documents.
+The system shall capture renewal information including proposed Start Date and End Date, revised contract value, renewal justification, and supporting documents.
 
 ### FR-037
 The system shall assign the renewal request a unique Renewal ID.
@@ -158,7 +158,7 @@ The system shall route the renewal request through the defined approval workflow
 The system shall allow approvers to approve, reject, or request modifications to a renewal request.
 
 ### FR-040
-The system shall automatically update the parent contract with the approved renewal details after successful completion of the renewal approval process.
+The system shall update the parent contract with the approved renewal information, including revised contract dates, contract value (if applicable), and renewal status after successful completion of the renewal approval process.
 
 ### FR-041
 The system shall maintain complete renewal history for every contract through linked Renewal Records.
@@ -189,14 +189,14 @@ The system shall notify the contract owner when a renewal request is approved or
 The system shall notify the next approver automatically after completion of the previous approval stage.
 
 ### FR-049
-The system shall maintain a history of notification events associated with each contract and renewal record.
+The system shall maintain a history of notification events, including notification type, recipient, delivery timestamp, and related business record.
 
 ---
 
 ## 6. Reporting & Dashboard
 
 ### FR-050
-The system shall provide a dashboard displaying key contract lifecycle metrics.
+The system shall provide dashboards displaying key contract lifecycle, renewal, and compliance metrics.
 
 ### FR-051
 The system shall display contracts that are approaching expiration within configurable time periods.
@@ -216,12 +216,12 @@ The system shall allow authorized users to filter reports by vendor, contract st
 ### FR-056
 The system shall allow authorized users to export reports for audit and management review purposes.
 
+### FR-057
+The system shall provide a dashboard summarizing vendor contract and compliance information.
+
 ---
 
 ## 7. Security & Access Control
-
-### FR-057
-The system shall provide role-based access to application features and data.
 
 ### FR-058
 The system shall ensure that users can only perform actions permitted by their assigned role.
@@ -284,3 +284,6 @@ The system shall support sorting of search results based on relevant business at
 
 ### FR-075
 The system shall allow users to combine multiple search filters to locate specific business records efficiently.
+
+### FR-076
+The system shall prevent duplicate active contracts for the same vendor and contract type based on predefined business validation rules.
