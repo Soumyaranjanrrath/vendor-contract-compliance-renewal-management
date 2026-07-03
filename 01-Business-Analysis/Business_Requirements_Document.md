@@ -214,16 +214,64 @@ The detailed functional requirements for the Vendor Contract Compliance & Renewa
 
 # 9. Non-Functional Requirements
 
-> *To be completed.*
+The application shall satisfy the following non-functional requirements to ensure performance, security, usability, reliability, and maintainability.
+
+| ID | Category | Requirement |
+|----|----------|-------------|
+| NFR-001 | Performance | The system shall display forms and lists within acceptable response times under normal operating conditions. |
+| NFR-002 | Availability | The application shall be available to authorized users whenever the ServiceNow platform is operational. |
+| NFR-003 | Security | The application shall enforce role-based access control to protect business data. |
+| NFR-004 | Data Integrity | The system shall validate mandatory information before records are submitted or approved. |
+| NFR-005 | Auditability | The system shall maintain audit history for important business activities and record modifications. |
+| NFR-006 | Usability | The application shall provide a simple and intuitive user interface that minimizes user training requirements. |
+| NFR-007 | Scalability | The application shall support future expansion, including additional contract types, compliance requirements, and business units. |
+| NFR-008 | Maintainability | The application shall follow ServiceNow development best practices to support future enhancements and maintenance. |
+| NFR-009 | Reliability | The application shall maintain consistent business data throughout the contract lifecycle. |
+| NFR-010 | Reporting | The application shall provide accurate and up-to-date information for dashboards and reports. |
 
 ---
 
 # 10. Assumptions & Constraints
 
-> *To be completed.*
+## Assumptions
+
+The project is based on the following assumptions:
+
+- All users will have valid ServiceNow user accounts with appropriate roles and permissions.
+- Vendor contract information and compliance documents will be available for migration into the application.
+- Business stakeholders will follow the defined approval workflow.
+- Required compliance documents will be provided by vendors before contract approval.
+- Email notifications will be available through the ServiceNow platform.
+- The organization will use the application as the primary system for managing vendor contracts after implementation.
+
+---
+
+## Constraints
+
+The project is subject to the following constraints:
+
+- The project scope is limited to Version 1.0 features defined in this Business Requirements Document.
+- Vendor onboarding and registration are outside the scope of this release.
+- ERP integration (e.g., SAP) is not included in Version 1.0.
+- Digital signature integration is not included.
+- Vendor self-service portal functionality is not included.
+- AI-based contract analysis and risk assessment are outside the scope of this release.
+- The application will be developed using standard ServiceNow capabilities without unnecessary customizations.
 
 ---
 
 # 11. Success Criteria
 
-> *To be completed.*
+The Vendor Contract Compliance & Renewal Management application will be considered successful if it achieves the following business outcomes after implementation:
+
+- Vendor contracts are managed through a centralized ServiceNow application instead of spreadsheets and shared folders.
+- Contract renewals are initiated before contract expiration through automated monitoring and reminders.
+- Compliance documents are tracked and monitored throughout the contract lifecycle.
+- Contract approvals follow a standardized and transparent workflow.
+- Authorized users can easily search, access, and manage vendor contracts and related records.
+- Management can monitor contract status, renewals, and compliance through dashboards and reports.
+- Audit teams can retrieve complete contract, approval, and renewal history without manual document collection.
+- Manual administrative effort involved in vendor contract management is significantly reduced.
+- The application provides a scalable foundation for future enhancements such as ERP integration, Vendor Portal, and AI-assisted contract analysis.
+
+---

@@ -287,3 +287,5 @@ The system shall allow users to combine multiple search filters to locate specif
 
 ### FR-076
 The system shall prevent duplicate active contracts for the same vendor and contract type based on predefined business validation rules.
+
+---
