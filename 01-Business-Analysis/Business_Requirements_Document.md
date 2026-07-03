@@ -33,7 +33,28 @@
 
 # 1. Project Overview
 
-> *To be completed.*
+## Purpose
+
+The Vendor Contract Compliance & Renewal Management application is a custom ServiceNow solution designed to centralize and automate the management of vendor contracts throughout their lifecycle. The application enables the organization to efficiently manage contract creation, compliance monitoring, approval workflows, renewal activities, and contract expiration through a single platform.
+
+## Project Description
+
+The application provides a structured process for managing vendor contracts from creation to closure. It ensures that all vendor contracts, compliance documents, approvals, and renewal activities are tracked within ServiceNow, reducing dependency on manual spreadsheets and email communication.
+
+The system will automate contract renewal reminders, monitor compliance document validity, assign approval tasks to appropriate stakeholders, and provide real-time dashboards for monitoring contract status, upcoming renewals, and vendor compliance.
+
+## Expected Business Value
+
+The implementation of this application is expected to:
+
+- Centralize vendor contract information.
+- Reduce manual administrative effort.
+- Prevent missed contract renewals.
+- Improve vendor compliance tracking.
+- Increase visibility into contract lifecycle activities.
+- Strengthen audit readiness.
+- Reduce operational and legal risks.
+- Improve overall procurement governance.
 
 ---
 
