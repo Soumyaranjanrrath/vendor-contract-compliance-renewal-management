@@ -206,7 +206,9 @@ The following features are not included in Version 1.0:
 
 # 8. Functional Requirements
 
-> *To be completed.*
+The detailed functional requirements for the Vendor Contract Compliance & Renewal Management application are maintained in the document:
+
+**Functional_Requirements.md**
 
 ---
 
