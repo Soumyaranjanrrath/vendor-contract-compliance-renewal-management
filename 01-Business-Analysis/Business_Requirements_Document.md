@@ -10,7 +10,7 @@
 | Current Phase | Phase 1 – Business Analysis |
 | Version | 1.0 |
 | Status | Draft |
-| Prepared By | Tapan |
+| Prepared By | Soumyaranjan Rath |
 | Date | 03 July 2026 |
 
 ---
