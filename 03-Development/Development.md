@@ -120,3 +120,75 @@ Automatically assign a unique contract number to every vendor contract.
 - Leveraged ServiceNow's native numbering mechanism for consistency and uniqueness.
 
 ---
+
+# Phase 3.5 – Dynamic UI Policy for Renewal Date
+
+## Objective
+Implement dynamic form behavior to make the **Renewal Date** field mandatory only for contract types that require renewal tracking.
+
+## Implementation
+- Created a UI Policy on the **Vendor Contract** table.
+- Applied conditions for:
+  - Software License
+  - Service Agreement
+- Added a UI Policy Action to make the **Renewal Date** field mandatory.
+- Enabled **Reverse if false** so the field automatically becomes optional for all other contract types.
+
+## Business Logic
+- If Contract Type is **Software License** or **Service Agreement**, Renewal Date becomes mandatory.
+- For all other contract types, Renewal Date remains optional.
+
+## Outcome
+- Improved user experience by enforcing data entry only when applicable.
+- Reduced unnecessary mandatory fields.
+- Implemented client-side validation using ServiceNow UI Policies.
+
+## Skills Learned
+- UI Policies
+- UI Policy Actions
+- Dynamic Form Behavior
+- Client-side Form Validation
+- Conditional Mandatory Fields
+
+---
+
+# Phase 3.6 – Automatic Renewal Status using Business Rule
+
+## Objective
+Automate the **Renewal Status** field based on the contract's Renewal Date to eliminate manual updates and ensure consistent renewal tracking.
+
+## Implementation
+- Created a **Before Business Rule** on the Vendor Contract table.
+- Configured the Business Rule to execute on:
+  - Insert
+  - Update
+- Used **GlideDate** API to compare dates and automatically determine the contract's renewal status.
+
+## Business Logic
+| Renewal Date | Renewal Status |
+|--------------|----------------|
+| Past Date | Expired |
+| Within Next 30 Days | Renewal Due |
+| More Than 30 Days | Active |
+
+## Testing Performed
+Verified the Business Rule using multiple scenarios:
+- Renewal Date in the past → Expired
+- Renewal Date within 30 days → Renewal Due
+- Renewal Date beyond 30 days → Active
+- Confirmed functionality during both record creation and record updates.
+
+## Outcome
+- Eliminated manual maintenance of the Renewal Status field.
+- Ensured consistent server-side validation across all data sources.
+- Improved reliability of renewal tracking for vendor contracts.
+
+## Skills Learned
+- Business Rules
+- Server-side Scripting
+- GlideDate API
+- Date Comparison Logic
+- Before Insert & Before Update Execution
+- Automated Field Population
+
+---
