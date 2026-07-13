@@ -192,3 +192,71 @@ Verified the Business Rule using multiple scenarios:
 - Automated Field Population
 
 ---
+
+# Step 3.7 – Vendor Contract Renewal Reminder
+
+## Objective
+Automatically notify the assigned Contract Owner whenever a vendor contract reaches the Renewal Due stage.
+
+---
+
+## Features Implemented
+
+### Renewal Trigger
+- Flow executes whenever a Vendor Contract record is created or updated.
+- Condition:
+  Renewal Status = Renewal Due
+
+### Automatic Renewal Task Creation
+
+A Vendor Renewal Task is automatically created with:
+
+- Vendor Contract reference
+- Assigned To = Contract Owner
+- Due Date = Renewal Date
+- State = Open
+- Short Description
+- Description
+
+### Email Notification
+
+After creating the Renewal Task, an email notification is generated for the assigned Contract Owner.
+
+Email contains:
+
+- Vendor Contract
+- Renewal Due Date
+- Reminder Message
+- Instructions for renewal
+
+---
+
+## Result
+
+Whenever a contract enters the Renewal Due stage:
+
+1. Flow is triggered.
+2. Renewal Task is created.
+3. Task is assigned automatically.
+4. Email notification is generated.
+5. Email is placed into the ServiceNow mail queue.
+
+---
+
+## Testing
+
+### Tested Scenarios
+
+- Contract updated to Renewal Due
+- Renewal Task generated
+- Assigned To populated
+- Due Date populated
+- Email record generated
+
+### Observation
+
+Email delivery was not completed because SMTP services are disabled in the Personal Developer Instance.
+
+The application logic executed successfully and email records were created correctly.
+
+---
