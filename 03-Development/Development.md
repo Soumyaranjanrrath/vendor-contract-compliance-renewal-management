@@ -294,3 +294,82 @@ When the renewal decision is updated:
 ## Outcome
 
 The renewal lifecycle is processed automatically without manual updates to the Vendor Contract record.
+
+---
+
+# Phase 3.9 – Reports
+
+## Objective
+
+Provide reporting capabilities to monitor vendor contracts, renewal activities, compliance status, and operational progress.
+
+---
+
+## Features Implemented
+
+### Report 1 – Vendor Contracts by Renewal Status
+
+- Table: Vendor Contract
+- Type: Pie Chart
+- Group By: Renewal Status
+
+**Purpose**
+
+Provides a quick overview of contract distribution across Active, Renewal Due, Renewed, and Expired statuses.
+
+---
+
+### Report 2 – Contracts Expiring Soon
+
+- Table: Vendor Contract
+- Type: List Report
+- Filter:
+  - Renewal Status = Renewal Due
+
+**Purpose**
+
+Displays contracts requiring immediate renewal action.
+
+---
+
+### Report 3 – Compliance Status Distribution
+
+- Table: Vendor Contract
+- Type: Bar Chart
+- Group By: Compliance Status
+
+**Purpose**
+
+Visualizes the compliance status of vendor contracts.
+
+---
+
+### Report 4 – Renewal Tasks by State
+
+- Table: Vendor Renewal Tasks
+- Type: Bar Chart
+- Group By: State
+
+**Purpose**
+
+Displays the number of Open and Closed renewal tasks to monitor operational progress.
+
+---
+
+## Outcome
+
+The reporting module provides visibility into:
+
+- Vendor contract lifecycle
+- Contracts approaching renewal
+- Compliance status
+- Renewal task progress
+
+These reports help contract managers monitor contract health and support timely renewal decisions.
+
+## Future Enhancement
+
+A centralized Vendor Contract Management Dashboard can be configured to combine the reports into a single analytics workspace for business users.
+
+----
+
