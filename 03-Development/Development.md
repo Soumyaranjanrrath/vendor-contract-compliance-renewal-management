@@ -260,3 +260,37 @@ Email delivery was not completed because SMTP services are disabled in the Perso
 The application logic executed successfully and email records were created correctly.
 
 ---
+# Phase 3.8 – Renewal Decision Processing
+
+## Objective
+Automate renewal processing after a user submits a renewal decision.
+
+## Features Implemented
+
+- Business Rule on Vendor Renewal Tasks
+- Executes before record update
+- Runs only when:
+  - Renewal Decision changes
+  - Renewal Decision is not Pending
+  - Renewal Requested is false
+
+## Processing Logic
+
+When the renewal decision is updated:
+
+- Marks Renewal Requested as true
+- Stores the current user in Processed By
+- Stores current date/time in Completion Date
+- Closes the renewal task
+- Updates the related Vendor Contract
+
+### Renewal Status Mapping
+
+| Decision | Contract Status |
+|----------|-----------------|
+| Renew | Renewed |
+| Do Not Renew | Expired |
+
+## Outcome
+
+The renewal lifecycle is processed automatically without manual updates to the Vendor Contract record.
