@@ -373,3 +373,62 @@ A centralized Vendor Contract Management Dashboard can be configured to combine 
 
 ----
 
+# Phase 3.10 – Security & Access Control
+
+## Objective
+
+Implement role-based access control to ensure that users can only access data and application features based on their assigned responsibilities.
+
+---
+
+## Features Implemented
+
+### Custom Roles
+
+The following custom roles were created for the application:
+
+- Contract Manager
+- Compliance Officer
+- Contract User
+
+Each role provides different levels of access based on business responsibilities.
+
+---
+
+### Record-Level Access Control (ACLs)
+
+Record ACLs were configured for both application tables:
+
+#### Vendor Contract
+
+- Read
+- Create
+- Write
+- Delete
+
+#### Vendor Renewal Tasks
+
+- Read
+- Create
+- Write
+- Delete
+
+Authorized roles were assigned to each operation to restrict unauthorized access.
+
+---
+
+### Field-Level Security
+
+Sensitive fields were protected using Field ACLs to ensure only authorized users can modify critical contract information.
+
+---
+
+### Application Navigation Security
+
+Application menus and modules were configured with role-based visibility so that users only see the application features they are permitted to access.
+
+---
+
+## Outcome
+
+The application now provides secure, role-based access control by restricting access to application data, records, fields, and navigation based on assigned user roles.
