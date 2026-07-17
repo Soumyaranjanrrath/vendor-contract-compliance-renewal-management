@@ -206,9 +206,13 @@ The application was packaged using a ServiceNow Update Set and exported as an XM
 
 ### Deployment Artifact
 
-- [Vendor_Contract_Compliance_Renewal_Management_Update_Set.xml](05-Deployment/Update%20Set/Vendor_Contract_Compliance_Renewal_Management_Update_Set.xml)
+```text
+05-Deployment/
+└── Update_Set/
+    └── Vendor_Contract_Compliance_Renewal_Management_Update_Set.xml
+```
 
-The application is ready for migration to higher ServiceNow environments following the standard Update Set deployment process.
+> **Note:** The Update Set XML is included in this repository as the deployment package for migrating the application to another ServiceNow instance.
 
 ---
 
